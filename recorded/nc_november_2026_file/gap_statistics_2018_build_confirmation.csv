@@ -1,0 +1,23 @@
+ord,stat,point,lo99,hi99,jk_se,threshold,decision,loco_fragile
+0,"gap G(2), never_rebuilt",0.1927,0.1802,0.1998,0.0042,0,supported,false
+1,"widening G(8) - G(2), never_rebuilt",0.1575,0.1476,0.1666,0.0049,0.1,supported,false
+2,"F1 margin, never_rebuilt",0.0550,0.0369,0.0725,0.0091,0,supported,false
+5,"gap G(2), never_rebuilt | balanced panel",0.1760,0.1663,0.1816,0.0033,0,supported,false
+6,"widening G(8) - G(2), never_rebuilt | balanced panel",0.1742,0.1653,0.1829,0.0044,0.1,supported,false
+7,"F1 margin, never_rebuilt | balanced panel",0.0851,0.0679,0.1013,0.0086,0,supported,false
+10,"gap G(2), never_rebuilt | county-weighted",0.1762,0.1699,0.1828,0.0024,0,supported,false
+11,"widening G(8) - G(2), never_rebuilt | county-weighted",0.1631,0.1576,0.1685,0.0021,0.1,supported,false
+71,"F1 margin, never_rebuilt | county-weighted",0.0700,0.0590,0.0804,0.0043,0,supported,false
+12,"gap G(2), never_rebuilt | self-inclusive",0.1524,0.1370,0.1619,0.0060,0,supported,false
+13,"widening G(8) - G(2), never_rebuilt | self-inclusive",0.1598,0.1536,0.1674,0.0032,0.1,supported,false
+14,"F1 margin, never_rebuilt | self-inclusive",0.0573,0.0440,0.0711,0.0067,0,supported,false
+40,"gap G(2), never_rebuilt | exits scored 0",0.2754,0.2671,0.2851,0.0043,0,supported,false
+41,"widening G(8) - G(2), never_rebuilt | exits scored 0",0.2517,0.2398,0.2639,0.0060,0.1,supported,false
+42,"F1 margin, never_rebuilt | exits scored 0",0.1814,0.1618,0.1996,0.0097,0,supported,false
+50,"gap G(2), never_rebuilt | exits scored 1",0.1730,0.1601,0.1806,0.0047,0,supported,false
+51,"widening G(8) - G(2), never_rebuilt | exits scored 1",0.0668,0.0609,0.0730,0.0023,0.1,contradicted,false
+52,"F1 margin, never_rebuilt | exits scored 1",-0.0035,-0.0148,0.0087,0.0055,0,not supported,true
+101,"match rate among persons with truth, never_rebuilt, k = 2",0.9325,0.9241,0.9423,0.0045,,,
+102,"co-member F1, never_rebuilt, k = 2",0.7398,0.7270,0.7596,0.0079,,,
+164,"match rate among persons with truth, never_rebuilt, k = 8",0.8301,0.8142,0.8465,0.0085,,,
+165,"co-member F1, never_rebuilt, k = 8",0.4799,0.4675,0.5006,0.0078,,,

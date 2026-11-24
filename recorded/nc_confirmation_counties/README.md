@@ -1,0 +1,24 @@
+# North Carolina, 60 confirmation counties
+
+The main results. Clients are the registrants of the 60 confirmation counties at each build (Election Day of an even year, 2008 to 2016), scored at s = t + k for evidence age k = 2, 4, 6 and 8 years. Intervals are 99% (and 95% where named) county-cluster bootstrap percentiles. Files without a t column are at the 2016 build, lag 0.
+
+Statistics: kP (kappa_P) person-anchor exact share; mr / match_rate address-anchor match rate; kA address-anchor exact among matched; sigma stayer share; kS exact among stayers; mu exact among movers.
+
+| File | Rows | What it holds | Paper | Produced by |
+|---|---|---|---|---|
+| `currency_by_build_and_age.csv` | 20 | One row per (t, k): clients with truth at s (n) and kP, mr_addr, kA, sigma, kS, mu with 99% and 95% intervals. Denominator n, except kA (matched clients), kS (stayers) and mu (movers). | Section 5.1; Tables S5, S12; supplement D | `pipeline.py from the stage 3 runs` |
+| `exit_counts_by_reason.csv` | 182 | Clients by (policy, k, class, outcome, outcome_active): persons with truth and exits by removal reason, outcome right, wrong, none or unknown. Sums to the client file. Columns in OUTPUTS.md. | Table S10 | `currency.py exit counts` |
+| `exit_score_envelopes.csv` | 5 | Whole-file ranges (lo, hi) of the widening, the F1 margin and the loss cut when exits are scored anywhere in [0, 1]. | Section 5.7; Supplement F | `currency.envelopes from match_rate_inputs_by_age.csv` |
+| `exit_score_tipping_points.csv` | 18 | Each decided hypothesis part: point, threshold, values with exits scored 0 and 1, and the exit score e_star at which it reaches the threshold (blank outside [0, 1]). | Table S3 | `currency.tipping_points` |
+| `exit_score_two_age_tipping.csv` | 2 | Widening and F1 margin with exits at k = 2 and k = 8 scored separately: the k = 8 exit score that reaches the threshold given e2 = 0 and e2 = 1. | Supplement F | `currency.tipping_two_score` |
+| `hypothesis_statistics.tsv` | 242 | Every pre-stated statistic (gap G(k), widening, F1 margin, loss cut and their variants): point, 99% and 95% bootstrap intervals, jackknife SE, leave-one-county-out range, threshold, side and decision. | Table S3; Supplement B.4 | `reproduce.py analyze phase (stats tsv)` |
+| `jackknife_t_intervals.csv` | 22 | Each main hypothesis part: point and delete-one-county jackknife interval with a Student t reference (method names the degrees of freedom). | Table S3 | `currency.small_cluster from hypothesis_statistics.tsv` |
+| `match_rate_inputs_by_age.csv` | 4 | One row per k: client file size, persons with truth, exit share, whole-file and with-truth match rates and co-member F1 for the never-rebuilt and the refreshed graph, and the exits each still answers. | Table S10; section 5.7 | `currency.inputs_by_k` |
+| `match_validity_by_policy.csv` | 48 | One row per (k, rule): match rate, exact share (with unknown exits scored softly) and co-member F1 for each rebuild policy and matcher rule, with 99% intervals. | Tables 4, S12; section 7; Figure 2 (via paper_figures/) | `currency.py validity frontier` |
+| `match_validity_statistics.tsv` | 674 | Link survival, match validity, probabilistic-matcher G(k) and F1 margins by weight threshold, and support-ceiling losses: point, intervals, jackknife SE. | Supplement G.3 | `match_validity.py` |
+| `matcher_answer_diagnostics.csv` | 112 | One row per (rule, link, k): answered clients, stayer share among answers, validity V and exact shares among answered and unanswered stayers and movers. Columns in OUTPUTS.md. | Sections 7.1, 7.4 | `currency.py matcher diagnostics` |
+| `matcher_same_population.csv` | 4 | One row per k: kP over all clients with truth, and the probabilistic matcher's exact share beside kP on the clients it matches at W >= 0 and W >= 20. | Section 7.1 | `currency.link_same_population` |
+| `mover_timing.csv` | 24 | Movers by years since the recorded move (by_time) and the k = 2 mover cohort followed to k = 8 (cohort): n, exact, exact alone, exact as a group, mu. Columns in OUTPUTS.md. | Supplement D.1 | `currency.py mover timing` |
+| `readdressing_ablation.csv` | 4 | One row per k: person-anchor and address-anchor exact shares with and without the county-readdressing rule, and the clients whose true set changes. Columns in OUTPUTS.md. | Supplement E.3 | `currency.py readdressing ablation` |
+| `reference_sensitivity.csv` | 4 | One row per k, person anchor: the exact share under alternative truth references (inactive members dropped, the next January file, 2016 voters, re-issued NCIDs, mixed buildings, ages 18 and over). Columns in OUTPUTS.md. | Table S9; supplement E.4 | `currency.py reference sensitivities` |
+| `right_wrong_unknown_bounds.csv` | 8 | One row per (policy, k): shares of the whole client file that are right, wrong, unanswered and unknown, with lower and upper bounds. Columns in OUTPUTS.md. | Table 5; section 7.4 | `currency.py three-outcome bounds` |

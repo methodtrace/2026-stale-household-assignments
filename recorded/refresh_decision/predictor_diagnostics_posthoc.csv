@@ -1,0 +1,8 @@
+quantity,age_x_size,coarse_table_parity,comember_age_table_parity
+corr_g_with_realized_gain,0.2315,0.2381,0.2513
+corr_p_stored_with_e_stored,0.3638,,0.4745
+corr_p_fresh_with_e_fresh,0.1777,,0.2582
+top_ventile_mean_g,0.4047,,0.4898
+top_ventile_realized_gain,0.5232,,0.5171
+top_ventile_share_2018_cohort,1.0000,,0.9988
+second_ventile_realized_gain,0.5162,,0.4757

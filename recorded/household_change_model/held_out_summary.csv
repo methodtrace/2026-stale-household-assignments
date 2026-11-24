@@ -1,0 +1,17 @@
+stat,point,lo99,hi99,lo95,hi95
+brier_household_change_model,0.19630887,,,,
+brier_coarse_table,0.19760084,,,,
+brier_comember_age_table,0.19125851,,,,
+brier_age_size,0.19925156,,,,
+D_coarse_table,-0.00129197,-0.00198,-0.00076,-0.00182,-0.00086
+D_comember_age_table,0.00505036,+0.00412,+0.00591,+0.00433,+0.00572
+D_age_size,-0.00294268,-0.00414,-0.00189,-0.00378,-0.00206
+cell_mae_sig,0.0137,,,,
+cell_mae_kS,0.0093,,,,
+cell_mae_mu,0.0187,,,,
+cell_mae_kP_household_change_model,0.0138,,,,
+cell_mae_kP_coarse_table,0.0106,,,,
+county_D_coarse_table_min,-0.00268809,,,,
+county_D_coarse_table_max,-0.00022059,,,,
+county_D_coarse_table_nneg,20,,,,
+N,18975925,,,,

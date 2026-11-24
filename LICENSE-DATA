@@ -1,0 +1,17 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Designated data licensor: Prashant Chaudhary, 2026.
+
+This designation covers the recorded aggregate results under recorded/ (statistics, aggregate tables, manifests and
+checksum lists) and the county split and fixed model parameters under stale_assignments/data/. Executable code is licensed
+separately under Apache-2.0 (LICENSE). These are separate scopes, not a choice between licenses for the same file.
+Article and supplementary-paper text are excluded.
+
+The input voter registration snapshots are public records published by the North Carolina State Board of Elections. They
+are not included in this repository and this license does not cover them.
+
+License deed: https://creativecommons.org/licenses/by/4.0/
+Legal terms: https://creativecommons.org/licenses/by/4.0/legalcode.en
+
+Give appropriate credit, supply a link to the license, and indicate changes. Do not imply author endorsement. No warranty
+is made about suitability for a particular purpose. The full linked legal terms govern.

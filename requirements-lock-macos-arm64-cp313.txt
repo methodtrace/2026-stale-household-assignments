@@ -1,0 +1,7 @@
+# Exact wheel lock for macOS on Apple silicon.
+# CPython 3.13, macOS 14 or later, arm64; binary wheels only.
+# Each hash is the applicable binary wheel on the package's PyPI release page.
+polars==2.1.0 --hash=sha256:63c50ce3533f5a03d17c3a2a24f1d0e0c7eda98fbde4268a3cba900d34060e67
+polars-runtime-32==2.1.0 --hash=sha256:317314d65949f1d58c4939adf83aa0d2cfaf8da50fd4a725a2de27bde2c10018
+cityhash==0.4.10 --hash=sha256:38577d4b1965edfcc656f09813a3554572235f5e31de198cd44e6bc1f96323a2
+numpy==2.3.4 --hash=sha256:3634093d0b428e6c32c3a69b78e554f0cd20ee420dcad5a9f3b2a63762ce4197

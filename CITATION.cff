@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this software or its recorded results, please cite the archived release and the paper."
+title: "How Fast Stored Household Assignments Go Stale: Evidence from North Carolina Voter Rolls: reproducibility artifact"
+abstract: "Code and aggregate results that reproduce the results in the paper \"How Fast Stored Household Assignments Go Stale: Evidence from North Carolina Voter Rolls\" by Prashant Chaudhary. The Python code rebuilds every derived table from the public North Carolina voter registration snapshot files and the Ohio and Washington voter lists, which are not redistributed, and compares each output's SHA-256 digest with recorded/OUTPUTS.sha256; a correct run ends with \"PASS: 320 of 320 recorded outputs identical\". The release holds code, a description of the input schema and aggregate results only, no voter records. Code is Apache-2.0; the recorded results are CC-BY-4.0."
+type: software
+version: "1.0.0"
+doi: "10.5281/zenodo.24026471"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24026471"
+    description: "This version"
+  - type: doi
+    value: "10.5281/zenodo.24026470"
+    description: "All versions"
+date-released: "2026-11-24"
+license:
+  - Apache-2.0
+  - CC-BY-4.0
+repository-code: "https://github.com/methodtrace/2026-stale-household-assignments"
+keywords:
+  - data currency
+  - household composition
+  - record linkage
+  - identity graphs
+  - voter registration records
+authors:
+  - family-names: Chaudhary
+    given-names: Prashant
+    orcid: "https://orcid.org/0009-0001-1980-109X"
+    affiliation: "Independent Researcher"
+    email: prashant@prashantchaudhary.com
+preferred-citation:
+  type: article
+  title: "How Fast Stored Household Assignments Go Stale: Evidence from North Carolina Voter Rolls"
+  year: 2026
+  authors:
+    - family-names: Chaudhary
+      given-names: Prashant
+      orcid: "https://orcid.org/0009-0001-1980-109X"
+      affiliation: "Independent Researcher"

@@ -1,0 +1,7 @@
+# Version pins for this release. CPython 3.12 or 3.13 (cityhash 0.4.10 has no wheels for later versions).
+# Binary wheels for these versions exist for Linux (x86_64, aarch64), macOS (Apple silicon, Intel) and Windows.
+# requirements-lock-linux-cp313.txt and requirements-lock-macos-arm64-cp313.txt pin the exact wheels for CPython 3.13.
+polars==2.1.0
+polars-runtime-32==2.1.0
+cityhash==0.4.10
+numpy==2.3.4

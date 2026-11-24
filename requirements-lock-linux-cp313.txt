@@ -1,0 +1,7 @@
+# Exact wheel lock for the release verification environment.
+# CPython 3.13, Linux x86_64, glibc >= 2.28; binary wheels only.
+# Each hash is the applicable binary wheel on the package's PyPI release page.
+polars==2.1.0 --hash=sha256:63c50ce3533f5a03d17c3a2a24f1d0e0c7eda98fbde4268a3cba900d34060e67
+polars-runtime-32==2.1.0 --hash=sha256:0b838056cf365d7497971d9d9825c547766923338771c48c545b86ead2ebc572
+cityhash==0.4.10 --hash=sha256:584adb2d108453eb486a252113addb5239c570d13b81302f198b94cdb5e16b36
+numpy==2.3.4 --hash=sha256:fc8a63918b04b8571789688b2780ab2b4a33ab44bfe8ccea36d3eba51228c953
