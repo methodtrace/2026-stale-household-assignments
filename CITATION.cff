@@ -33,6 +33,8 @@ preferred-citation:
   type: article
   title: "How Fast Stored Household Assignments Go Stale: Evidence from North Carolina Voter Rolls"
   year: 2026
+  doi: "10.48550/arXiv.2611.32091"
+  url: "https://arxiv.org/abs/2611.32091"
   authors:
     - family-names: Chaudhary
       given-names: Prashant

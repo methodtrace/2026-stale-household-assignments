@@ -9,7 +9,7 @@ https://github.com/methodtrace/2026-stale-household-assignments
 
 - Cite this version: https://doi.org/10.5281/zenodo.24026471
 - All versions: https://doi.org/10.5281/zenodo.24026470
-- Preprint: Not yet posted
+- Preprint: arXiv:2611.32091, https://arxiv.org/abs/2611.32091
 - Published version: Not yet accepted
 
 Artifact version: **1.0.0**.
